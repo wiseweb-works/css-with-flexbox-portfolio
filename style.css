@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Comfortaa", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-bg-color: #212a34;
+  --second-bg-color: #353f4e;
+  --main-text-color: #fff;
+  --second-text-color: #d80404;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--main-bg-color);
+}
+
+.logo {
+  font: 600 2rem "Orbitron", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+}
+
+.navbar a:hover,
+.navbar a.active,
+body a {
+  color: var(--second-text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 10rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-content {
+  width: 70%;
+  text-align: justify;
+}
+
+.home-img {
+  width: 30%;
+  text-align: center;
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 10%;
+  animation: floatImage 5s ease-in-out infinite;
+}
+
+.home-content h3 {
+  font: 700 2rem "Comfortaa", sans-serif;
+  text-align: left;
+}
+
+.name {
+  color: var(--second-text-color);
+  font: 700 3rem/1.3 "Orbitron", sans-serif;
+}
+
+.info {
+  margin-top: 2rem;
+  font: normal 1rem "IBM Plex Mono", monospace;
+}
+
+.social-media {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-media a {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 3rem;
+  color: var(--second-text-color);
+  margin: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-media a:hover {
+  background: var(--second-text-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 3rem var(--second-text-color);
+}
+
+.btn {
+  background: var(--second-text-color);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.7rem var(--second-text-color);
+  color: var(--second-bg-color);
+  letter-spacing: 0.5rem;
+  font: 600 1rem "Comfortaa", sans-serif;
+}
+
+.about {
+  background: var(--second-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-img {
+  width: 25%;
+}
+
+.about-content {
+  width: 75%;
+  text-align: justify;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 10%;
+  animation: floatImage 5s ease-in-out infinite;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3em;
+}
+.about-content h3 {
+  font-size: 1.5rem;
+}
+.about-content p {
+  font: normal 1rem "IBM Plex Mono", monospace;
+  margin: 3rem 0;
+}
+
+span {
+  color: var(--second-text-color);
+}
+
+.skills {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+}
+
+.skills .heading {
+  margin-bottom: 4rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-box {
+  flex: 1 1 20rem;
+  background: var(--second-bg-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--main-bg-color);
+  transition: all 1s ease-in-out;
+}
+
+.skills-box:hover {
+  border-color: var(--second-text-color);
+  transform: scale(1.02);
+  box-shadow: 0 0 3rem var(--second-text-color);
+}
+
+.skills-box i {
+  font-size: 5rem;
+  color: var(--second-text-color);
+}
+
+.skills-box h3 {
+  font-size: 2rem;
+}
+
+.skills-box p {
+  font-size: 0.7rem;
+  margin: 1rem;
+  text-align: justify;
+}
+
+.projects {
+  padding-top: 3rem;
+  background: var(--second-bg-color);
+}
+.projects h2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.projects-box {
+  flex: 1 1 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.projects-box img {
+  width: 100%;
+  transition: all 1s;
+}
+
+.pro {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.projects-box:hover .pro {
+  transform: translateY(0);
+}
+
+.pro a {
+  font: normal 2rem "Orbitron", sans-serif;
+  color: var(--second-text-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1rem;
+}
+
+.footer-iconTop a {
+  background: var(--second-text-color);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem var(--second-text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color);
+}
+
+.footer-iconTop a:hover {
+  border-color: var(--second-text-color);
+  transform: scale(1.02);
+  box-shadow: 0 0 3rem var(--second-text-color);
+}
+
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+
+  header,
+  .home,
+  .about,
+  footer {
+    flex-direction: column;
+  }
+
+  header {
+    gap: 1rem;
+  }
+
+  .home {
+    margin-top: 3rem;
+  }
+
+  footer {
+    gap: 3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 0 3rem;
+  }
+
+  .social-media {
+    gap: 0rem;
+  }
+
+  .btn {
+    text-align: center;
+    display: block;
+  }
+}
